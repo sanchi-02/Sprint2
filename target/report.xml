@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="17" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="38" time="1336.894078">
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality" time="24.328457">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "sanchi0225@gmail.com" , "Sanchi" , "Gupta" in the fields...passed
+And User clicks on Register button..........................................passed
+Then User gets a "You have successfully registered to Real Estate. We have emailed your password to the email address you entered." conformation message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 2" time="24.322079">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "sanchi0225@gmail.com" , "Sanchi" , "Gupta" in the fields...passed
+And User clicks on Register button..........................................passed
+Then User gets a "An account exists with this email address." conformation message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 3" time="21.130304">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [The first and last name you entered is not valid.] but found [You have successfully registered to Real Estate. We have emailed your password to the email address you entered.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_conformation_message(RegisterLoginClass.java:107)&#13;&#10;&#9;at ✽.Then User gets a &quot;The first and last name you entered is not valid.&quot; conformation message(RegisterLogin.feature:12)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "sanchi25@gmail.com" , "!@$%^" , "!@$%^" in the fields......passed
+And User clicks on Register button..........................................passed
+Then User gets a "The first and last name you entered is not valid." conformation message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The first and last name you entered is not valid.] but found [You have successfully registered to Real Estate. We have emailed your password to the email address you entered.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_conformation_message(RegisterLoginClass.java:107)
+	at ✽.Then User gets a "The first and last name you entered is not valid." conformation message(RegisterLogin.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 4" time="23.458489">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [The first and last name you entered is not valid.] but found [You have successfully registered to Real Estate. We have emailed your password to the email address you entered.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_conformation_message(RegisterLoginClass.java:107)&#13;&#10;&#9;at ✽.Then User gets a &quot;The first and last name you entered is not valid.&quot; conformation message(RegisterLogin.feature:12)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "sanchi225@gmail.com" , "San123" , "Gup123" in the fields...passed
+And User clicks on Register button..........................................passed
+Then User gets a "The first and last name you entered is not valid." conformation message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The first and last name you entered is not valid.] but found [You have successfully registered to Real Estate. We have emailed your password to the email address you entered.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_conformation_message(RegisterLoginClass.java:107)
+	at ✽.Then User gets a "The first and last name you entered is not valid." conformation message(RegisterLogin.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 5" time="21.542862">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [The first and last name you entered is not valid.] but found [You have successfully registered to Real Estate. We have emailed your password to the email address you entered.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_conformation_message(RegisterLoginClass.java:107)&#13;&#10;&#9;at ✽.Then User gets a &quot;The first and last name you entered is not valid.&quot; conformation message(RegisterLogin.feature:12)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "sanchi522@gmail.com" , "12365" , "344456" in the fields....passed
+And User clicks on Register button..........................................passed
+Then User gets a "The first and last name you entered is not valid." conformation message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The first and last name you entered is not valid.] but found [You have successfully registered to Real Estate. We have emailed your password to the email address you entered.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_conformation_message(RegisterLoginClass.java:107)
+	at ✽.Then User gets a "The first and last name you entered is not valid." conformation message(RegisterLogin.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 6" time="20.361033">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "fgadghsda" , "Sanchi" , "Gupta" in the fields..............passed
+And User clicks on Register button..........................................passed
+Then User gets a "The email address you entered is not valid." conformation message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 7" time="21.492683">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "$^&(^&" , "Sanchi" , "Gupta" in the fields.................passed
+And User clicks on Register button..........................................passed
+Then User gets a "The email address you entered is not valid." conformation message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 8" time="21.646893">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "blank" , "blank" , "blank" in the fields...................passed
+And User clicks on Register button..........................................passed
+Then User gets a "The email address you entered is not valid." conformation message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Register functionality 9" time="21.883717">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to the Register tab..........................................passed
+And User enters "6845834" , "Sanchi" , "Gupta" in the fields................passed
+And User clicks on Register button..........................................passed
+Then User gets a "The email address you entered is not valid." conformation message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Login functionality" time="26.524759">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "admin" , "admin@123" in the fields........................passed
+And User clicks on Login button.............................................passed
+Then User "Dashboard" confirmation message is displayed.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Login functionality 2" time="21.71548">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "!@$%^" , "hdgfh" in the fields............................passed
+And User clicks on Login button.............................................passed
+Then User "We don't have any users with that email address. Maybe you used a different one when signing up?" confirmation message is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Login functionality 3" time="18.601597">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "12345" , "hdgfh" in the fields............................passed
+And User clicks on Login button.............................................passed
+Then User "We don't have any users with that email address. Maybe you used a different one when signing up?" confirmation message is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Login functionality 4" time="20.904043">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "blank" , "hdgfh" in the fields............................passed
+And User clicks on Login button.............................................passed
+Then User "You do have an email address, right?" confirmation message is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Login functionality 5" time="19.14249">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "admin" , "!$^&" in the fields.............................passed
+And User clicks on Login button.............................................passed
+Then User "The password you entered wasn't quite right. Did you forget your password?" confirmation message is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Login functionality 6" time="22.085517">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "admin" , "1234" in the fields.............................passed
+And User clicks on Login button.............................................passed
+Then User "The password you entered wasn't quite right. Did you forget your password?" confirmation message is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Login functionality 7" time="19.501575">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "admin" , "blank" in the fields............................passed
+And User clicks on Login button.............................................passed
+Then User "You need to enter a password to login." confirmation message is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Logout functionality" time="32.413621">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User enters "admin" , "admin@123" to login.............................passed
+And User clicks the Login button............................................passed
+When User hovers on Profile icon............................................passed
+And User clicks on Log Out option...........................................passed
+Then User gets back to the Login page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Forget Password functionality" time="21.242219">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Password reset link has been sent to your mail id.] but found [The email could not be sent.&#10;Possible reason: your host may have disabled the mail() function.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_message(RegisterLoginClass.java:325)&#13;&#10;&#9;at ✽.Then User gets a &quot;Password reset link has been sent to your mail id.&quot; message(RegisterLogin.feature:60)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Lost Your Password link.................................passed
+Then User gets to a Lost Password page......................................passed
+When User enters "sanchi@gmail.com" in the field............................passed
+And User clicks on Reset Password button....................................passed
+Then User gets a "Password reset link has been sent to your mail id." message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Password reset link has been sent to your mail id.] but found [The email could not be sent.
+Possible reason: your host may have disabled the mail() function.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_message(RegisterLoginClass.java:325)
+	at ✽.Then User gets a "Password reset link has been sent to your mail id." message(RegisterLogin.feature:60)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Forget Password functionality 2" time="26.368633">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Lost Your Password link.................................passed
+Then User gets to a Lost Password page......................................passed
+When User enters "sanchi" in the field......................................passed
+And User clicks on Reset Password button....................................passed
+Then User gets a "Invalid password reset link." message.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Forget Password functionality 3" time="26.646941">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Lost Your Password link.................................passed
+Then User gets to a Lost Password page......................................passed
+When User enters "!@$^&&" in the field......................................passed
+And User clicks on Reset Password button....................................passed
+Then User gets a "Invalid password reset link." message.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Forget Password functionality 4" time="23.053731">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Lost Your Password link.................................passed
+Then User gets to a Lost Password page......................................passed
+When User enters "123456" in the field......................................passed
+And User clicks on Reset Password button....................................passed
+Then User gets a "Invalid password reset link." message.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Forget Password functionality 5" time="23.472377">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Lost Your Password link.................................passed
+Then User gets to a Lost Password page......................................passed
+When User enters "blank" in the field.......................................passed
+And User clicks on Reset Password button....................................passed
+Then User gets a "Invalid password reset link." message.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Real Estate link on top of website" time="31.640356">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on the Real Estate link....................................passed
+Then User sees a Search bar.................................................passed
+Then User sees Featured Properties..........................................passed
+Then User sees Realty, Home Loan, Interiors and Legal icons.................passed
+Then User sees Listings For Sale, Clients, Builders and Conversion information.passed
+Then User sees Comments of clients..........................................passed
+And User clicks on Arrow....................................................passed
+Then User sees next comments................................................passed
+When User sees Realty News and Articles.....................................passed
+And User clicks on Arrow in that section....................................passed
+Then User sees next articles................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify links in Real Estate link on top of website" time="52.78275">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Browse Properties – Real Estate] but found [Page not found – Real Estate]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_to_a_Contact_Us_Page(RegisterLoginClass.java:755)&#13;&#10;&#9;at ✽.Then User gets to a Contact Us Page(RegisterLogin.feature:104)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User goes to Real Estate page..........................................passed
+And User clicks on Realty icon..............................................passed
+Then User gets to Realty Website............................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Home Loan icon...........................................passed
+Then User gets to Home Loan Website.........................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Interiors icon...........................................passed
+Then User gets to Interiors Website.........................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Legal icon...............................................passed
+Then User gets to Legal Website.............................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Browse Properties link...................................passed
+Then User gets a list of properties.........................................passed
+When User gets back to main website.........................................passed
+And User hovers to the Property Management picture..........................passed
+And User clicks on the Share Details link...................................passed
+Then User gets to a Contact Us Page.........................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Browse Properties – Real Estate] but found [Page not found – Real Estate]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_to_a_Contact_Us_Page(RegisterLoginClass.java:755)
+	at ✽.Then User gets to a Contact Us Page(RegisterLogin.feature:104)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality" time="26.679506">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Web Link – Real Estate] but found [realestate.ohbreaks.com],&#10;&#9;expected [Email – Real Estate] but found [realestate.ohbreaks.com]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_is_able_to_send_an_email(RegisterLoginClass.java:865)&#13;&#10;&#9;at ✽.Then User is able to send an email(RegisterLogin.feature:115)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User finds an office address with a map................................passed
+Then User finds phone number, web and email address.........................passed
+When User clicks on Web link................................................passed
+Then User gets more information.............................................passed
+And User gets back to contact page..........................................passed
+When User clicks on email address link......................................passed
+Then User is able to send an email..........................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Web Link – Real Estate] but found [realestate.ohbreaks.com],
+	expected [Email – Real Estate] but found [realestate.ohbreaks.com]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_is_able_to_send_an_email(RegisterLoginClass.java:865)
+	at ✽.Then User is able to send an email(RegisterLogin.feature:115)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality" time="20.151094">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Your message has been sent successfully.] but found []&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;Your message has been sent successfully.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "sanchi@gmail.com" , "More Information Needed" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "Your message has been sent successfully." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Your message has been sent successfully.] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "Your message has been sent successfully." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 2" time="302.261999">
+<failure message="org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 296.760&#10;  (Session info: chrome=94.0.4606.81)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-UC8HMKC', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 332801fdf8c4f8e8f57573c846c27adb&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#13;&#10;&#9;at hooks.Hooks.initialization(Hooks.java:15)&#13;&#10;&#9;at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#13;&#10;&#9;at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#13;&#10;&#9;at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#13;&#10;&#9;at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................skipped
+When User clicks on Contact Us link.........................................skipped
+Then User enters "blank" , "sanchi@gmail.com" , "More Information Needed" , "I want more information." in the contact form.skipped
+Then User clicks on Send button.............................................skipped
+And User gets a "One or more fields have an error. Please check and try again." for sending message.skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 296.760
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UC8HMKC', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 332801fdf8c4f8e8f57573c846c27adb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at hooks.Hooks.initialization(Hooks.java:15)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 3" time="30.958956">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Some field has an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;Some field has an error. Please check and try again.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "!@$%&" , "sanchi@gmail.com" , "More Information Needed" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "Some field has an error. Please check and try again." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Some field has an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "Some field has an error. Please check and try again." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 4" time="38.62909">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Some field has an error. Please check and try again.] but found []&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;Some field has an error. Please check and try again.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanc123" , "sanchi@gmail.com" , "More Information Needed" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "Some field has an error. Please check and try again." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Some field has an error. Please check and try again.] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "Some field has an error. Please check and try again." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 5" time="37.281957">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [One or more fields have an error. Please check and try again.] but found []&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;One or more fields have an error. Please check and try again.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "blank" , "More Information Needed" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "One or more fields have an error. Please check and try again." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [One or more fields have an error. Please check and try again.] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "One or more fields have an error. Please check and try again." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 6" time="37.776042">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "sanchi123" , "More Information Needed" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "One or more fields have an error. Please check and try again." for sending message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 7" time="26.160968">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [One or more fields have an error. Please check and try again.] but found []&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;One or more fields have an error. Please check and try again.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "!@$%&^" , "More Information Needed" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "One or more fields have an error. Please check and try again." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [One or more fields have an error. Please check and try again.] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "One or more fields have an error. Please check and try again." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 8" time="26.621191">
+<system-out><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "sanchi@gmail.com" , "blank" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "One or more fields have an error. Please check and try again." for sending message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 9" time="29.047389">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Some field has an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;Some field has an error. Please check and try again.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "sanchi@gmail.com" , "!@$%^" , "I want more information." in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "Some field has an error. Please check and try again." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Some field has an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "Some field has an error. Please check and try again." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 10" time="25.871084">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Some field has an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;Some field has an error. Please check and try again.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "sanchi@gmail.com" , "More Information Needed" , "!@%^&" in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "Some field has an error. Please check and try again." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Some field has an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "Some field has an error. Please check and try again." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify Contact Us functionality 11" time="23.446945">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [One or more fields have an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)&#13;&#10;&#9;at ✽.And User gets a &quot;One or more fields have an error. Please check and try again.&quot; for sending message(RegisterLogin.feature:122)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+When User clicks on Contact Us link.........................................passed
+Then User enters "Sanchi" , "sanchi@gmail.com" , "More Information Needed" , "blank" in the contact form.passed
+Then User clicks on Send button.............................................passed
+And User gets a "One or more fields have an error. Please check and try again." for sending message.failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [One or more fields have an error. Please check and try again.] but found [There was an error trying to send your message. Please try again later.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_a_for_sending_message(RegisterLoginClass.java:935)
+	at ✽.And User gets a "One or more fields have an error. Please check and try again." for sending message(RegisterLogin.feature:122)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify links located at top of the website" time="68.028901">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Google+] but found [My Profile – Real Estate],&#10;&#9;expected [Real Estate] but found [realestate.ohbreaks.com]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_finds_latest_news_and_blogs(RegisterLoginClass.java:1127)&#13;&#10;&#9;at ✽.And User finds latest news and blogs(RegisterLogin.feature:157)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+Then User finds a phone number and email address............................passed
+And User clicks on Facebook icon............................................passed
+Then User gets to Facebook login page.......................................passed
+When User gets back to main website.........................................passed
+And User clicks on Twitter icon.............................................passed
+Then User gets to Twitter login page........................................passed
+When User gets back to main website.........................................passed
+And User clicks on Google+ icon.............................................passed
+Then User gets to Google+ login page........................................passed
+And User clicks on Wifi icon................................................passed
+Then User gets to Wifi login page...........................................passed
+When User gets back to main website.........................................passed
+And User clicks on Invest In Overseas link..................................passed
+Then User gets to Invest In Overseas page...................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Blogs link...............................................passed
+Then User gets to Blogs page................................................passed
+And User finds latest news and blogs........................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Google+] but found [My Profile – Real Estate],
+	expected [Real Estate] but found [realestate.ohbreaks.com]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_finds_latest_news_and_blogs(RegisterLoginClass.java:1127)
+	at ✽.And User finds latest news and blogs(RegisterLogin.feature:157)
+]]></failure>
+</testcase>
+<testcase classname="Verify Register and Login functionality" name="Verify links located at bottom of the website" time="57.71635">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;&#9;expected [Facebook – log in or sign up] but found [My Profile – Real Estate],&#10;&#9;expected [Twitter] but found [My Profile – Real Estate],&#10;&#9;expected [Google+] but found [My Profile – Real Estate],&#10;&#9;expected [More Information] but found [My Profile – Real Estate]&#13;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)&#13;&#10;&#9;at stepdefinitionpackage.RegisterLoginClass.user_gets_to_that_page(RegisterLoginClass.java:1275)&#13;&#10;&#9;at ✽.Then User gets to that page(RegisterLogin.feature:184)&#13;&#10;"><![CDATA[Given User is on the Real Estate Website....................................passed
+Then User finds address, phone number and email address.....................passed
+And User clicks on About Us link............................................passed
+Then User gets to About Us page.............................................passed
+When User gets back to main website.........................................passed
+And User clicks on Contact Us link..........................................passed
+Then User gets to Contact Us page...........................................passed
+When User gets back to main website.........................................passed
+And User clicks on Blogs link...............................................passed
+Then User gets to Blogs page................................................passed
+When User gets back to main website.........................................passed
+And User clicks on Compare Properties link..................................passed
+Then User gets to Compare Properties page...................................passed
+When User gets back to main website.........................................passed
+And User clicks on Facebook icon at page's bottom...........................passed
+Then User gets to Facebook login page.......................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Twitter icon at page's bottom............................passed
+Then User gets to Twitter login page........................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Google+ icon at page's bottom............................passed
+Then User gets to Google+ login page........................................passed
+When User gets back to Real Estate website..................................passed
+And User clicks on Wifi icon at page's bottom...............................passed
+Then User gets to that page.................................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Facebook – log in or sign up] but found [My Profile – Real Estate],
+	expected [Twitter] but found [My Profile – Real Estate],
+	expected [Google+] but found [My Profile – Real Estate],
+	expected [More Information] but found [My Profile – Real Estate]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at stepdefinitionpackage.RegisterLoginClass.user_gets_to_that_page(RegisterLoginClass.java:1275)
+	at ✽.Then User gets to that page(RegisterLogin.feature:184)
+]]></failure>
+</testcase>
+</testsuite>
