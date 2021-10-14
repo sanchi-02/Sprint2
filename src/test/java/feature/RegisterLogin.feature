@@ -13,7 +13,7 @@ Feature: Verify Register and Login functionality
 
     Examples: 
       | email                | firstName | lastName | registration                                                                                                     |
-      | sanchi2502@gmail.com  | Sanchi    | Gupta    | You have successfully registered to Real Estate. We have emailed your password to the email address you entered. |
+      | sanchi2502@gmail.com | Sanchi    | Gupta    | You have successfully registered to Real Estate. We have emailed your password to the email address you entered. |
       | sanchi2502@gmail.com | Sanchi    | Gupta    | An account exists with this email address.                                                                       |
       | sanchi25@gmail.com   | !@$%^     | !@$%^    | The first and last name you entered is not valid.                                                                |
       | sanchi225@gmail.com  | San123    | Gup123   | The first and last name you entered is not valid.                                                                |
@@ -30,14 +30,14 @@ Feature: Verify Register and Login functionality
     Then User "<login>" confirmation message is displayed
 
     Examples: 
-      | userName | password  | login                                                                                            |
-      | admin    | admin@123 | Dashboard                                                                                        |
-      | !@$%^    | hdgfh     | We don't have any users with that email address. Maybe you used a different one when signing up? |
-      |    12345 | hdgfh     | We don't have any users with that email address. Maybe you used a different one when signing up? |
-      | blank    | hdgfh     | You do have an email address, right?                                                             |
-      | admin    | !$^&      | The password you entered wasn't quite right. Did you forget your password?                       |
-      | admin    |      1234 | The password you entered wasn't quite right. Did you forget your password?                       |
-      | admin    | blank     | You need to enter a password to login.                                                           |
+      | userName     | password        | login                                                                                            |
+      | amit92luthra | admin@987654321 | Dashboard                                                                                        |
+      | !@$%^        | hdgfh           | We don't have any users with that email address. Maybe you used a different one when signing up? |
+      |        12345 | hdgfh           | We don't have any users with that email address. Maybe you used a different one when signing up? |
+      | blank        | hdgfh           | You do have an email address, right?                                                             |
+      | admin        | !$^&            | The password you entered wasn't quite right. Did you forget your password?                       |
+      | admin        |            1234 | The password you entered wasn't quite right. Did you forget your password?                       |
+      | admin        | blank           | You need to enter a password to login.                                                           |
 
   @logout
   Scenario Outline: Verify Logout functionality
@@ -48,8 +48,8 @@ Feature: Verify Register and Login functionality
     Then User gets back to the Login page
 
     Examples: 
-      | userName | password  |
-      | admin    | admin@123 |
+      | userName     | password        |
+      | amit92luthra | admin@987654321 |
 
   @forgetpassword
   Scenario Outline: Verify Forget Password functionality
@@ -155,7 +155,7 @@ Feature: Verify Register and Login functionality
     And User clicks on Blogs link
     Then User gets to Blogs page
     And User finds latest news and blogs
-    
+
   @bottomlinks
   Scenario: Verify links located at bottom of the website
     Then User finds address, phone number and email address
@@ -182,5 +182,3 @@ Feature: Verify Register and Login functionality
     When User gets back to Real Estate website
     And User clicks on Wifi icon at page's bottom
     Then User gets to that page
-    
-   
