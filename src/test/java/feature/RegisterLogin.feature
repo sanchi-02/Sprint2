@@ -30,14 +30,14 @@ Feature: Verify Register and Login functionality
     Then User "<login>" confirmation message is displayed
 
     Examples: 
-      | userName     | password        | login                                                                                            |
-      | amit92luthra | admin@987654321 | Dashboard                                                                                        |
-      | !@$%^        | hdgfh           | We don't have any users with that email address. Maybe you used a different one when signing up? |
-      |        12345 | hdgfh           | We don't have any users with that email address. Maybe you used a different one when signing up? |
-      | blank        | hdgfh           | You do have an email address, right?                                                             |
-      | admin        | !$^&            | The password you entered wasn't quite right. Did you forget your password?                       |
-      | admin        |            1234 | The password you entered wasn't quite right. Did you forget your password?                       |
-      | admin        | blank           | You need to enter a password to login.                                                           |
+      | userName                  | password     | login                                                                                            |
+      | mohankrishna176@gmail.com | secret@123&& | Dashboard                                                                                        |
+      | !@$%^                     | hdgfh        | We don't have any users with that email address. Maybe you used a different one when signing up? |
+      |                     12345 | hdgfh        | We don't have any users with that email address. Maybe you used a different one when signing up? |
+      | blank                     | hdgfh        | You do have an email address, right?                                                             |
+      | admin                     | !$^&         | The password you entered wasn't quite right. Did you forget your password?                       |
+      | admin                     |         1234 | The password you entered wasn't quite right. Did you forget your password?                       |
+      | admin                     | blank        | You need to enter a password to login.                                                           |
 
   @logout
   Scenario Outline: Verify Logout functionality
@@ -48,8 +48,8 @@ Feature: Verify Register and Login functionality
     Then User gets back to the Login page
 
     Examples: 
-      | userName     | password        |
-      | amit92luthra | admin@987654321 |
+      | userName                  | password     |
+      | mohankrishna176@gmail.com | secret@123&& |
 
   @forgetpassword
   Scenario Outline: Verify Forget Password functionality
